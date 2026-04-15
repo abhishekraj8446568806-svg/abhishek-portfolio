@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f0ec;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #1f1f1f, #2c2c2c);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: #c59d5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #a8844d;
+}
+
+/* 🔥 FULL WIDTH LAYOUT */
+section {
+  padding: 25px 60px;   /* use side space */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* SECTION TITLE */
+h2 {
+  border-bottom: 2px solid #c59d5f;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* ABOUT */
+section p {
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+/* 🔥 GRID SYSTEM */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* LIST */
+ul {
+  padding-left: 18px;
+  margin: 8px 0;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+section {
+  width: 75%;
+  margin-left: 8%;   /* pushes content slightly left */
+}
+
+/* PROJECTS move to right */
+.projects-section {
+  width: 75%;
+  margin-left: auto;
+  margin-right: 8%;  /* pushes it to right side */
+}
