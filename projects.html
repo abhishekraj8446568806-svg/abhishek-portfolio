@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Abhishek Kumar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="projects-page">
+    <header class="projects-hero">
+      <a href="./index.html" class="back-link">Home</a>
+      <h1>Project Case Studies</h1>
+      <p>
+        A focused collection of analytics projects covering health data, banking churn, and ride-demand analysis.
+      </p>
+    </header>
+
+    <section class="project-list">
+      <article class="project-section health-project" id="health-data-analysis">
+        <details class="project-details">
+          <summary>
+            <span class="project-kicker">Project 01</span>
+            <span class="project-title">Health Data Analysis Dashboard</span>
+            <span class="project-summary">
+              Patient health analytics across BMI, diabetes, region, education, and lifestyle patterns.
+            </span>
+            <span class="read-more">Read More</span>
+          </summary>
+        </details>
+
+        <div class="dataset-panel project-overview">
+          <h2>Dataset Overview</h2>
+          <ul>
+            <li>900+ patient records</li>
+            <li>Demographics: Age, Gender, Location</li>
+            <li>Socio-economic: Income, Education, Occupation</li>
+            <li>Lifestyle: Smoking, Drinking</li>
+            <li>Health Metrics: BMI, Diabetes</li>
+          </ul>
+        </div>
+
+        <div class="project-content">
+          <article class="visual-card dashboard-main">
+            <img src="./healht_dashboards.png" alt="Health data analysis dashboard overview">
+            <div>
+              <h3>Health Dashboard Overview</h3>
+              <p>Combined view of patient metrics, regional patterns, lifestyle indicators, and health risks.</p>
+            </div>
+          </article>
+
+          <details class="more-gallery">
+            <summary>
+              <span>See More</span>
+            </summary>
+
+            <div class="visual-grid">
+              <article class="visual-card">
+                <img src="./Drinking Trends by Region.png" alt="Drinking trends by region dashboard">
+                <div>
+                  <h3>Drinking Trends Region Wise</h3>
+                  <p>Compared lifestyle patterns by region to identify concentration and behavioral differences.</p>
+                </div>
+              </article>
+
+              <article class="visual-card">
+                <img src="./Education Analysis Dashboard.png" alt="Education analysis dashboard">
+                <div>
+                  <h3>Education Analysis</h3>
+                  <p>Reviewed education distribution and highlighted which groups were most represented.</p>
+                </div>
+              </article>
+
+              <article class="visual-card">
+                <img src="./Health Conditions by Region.png" alt="Health conditions by region dashboard">
+                <div>
+                  <h3>Health Condition Region Wise</h3>
+                  <p>Mapped diabetes, heart disease, and other condition patterns across regions.</p>
+                </div>
+              </article>
+
+              <article class="visual-card">
+                <img src="./Smoking Trends by Region.png" alt="Smoking trends by region dashboard">
+                <div>
+                  <h3>Smoking Trends Region Wise</h3>
+                  <p>Compared smokers and non-smokers to understand region-level lifestyle risk.</p>
+                </div>
+              </article>
+
+              <article class="visual-card wide">
+                <img src="./bmichart.png" alt="BMI and diabetes analysis dashboard">
+                <div>
+                  <h3>BMI & Diabetes Analysis</h3>
+                  <p>BMI showed a clear relationship with diabetes risk, with consistent impact across regions.</p>
+                </div>
+              </article>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="project-section bank-project" id="bank-customer-attrition">
+        <details class="project-details">
+          <summary>
+            <span class="project-kicker">Project 02</span>
+            <span class="project-title">Bank Customer Attrition Analysis</span>
+            <span class="project-summary">
+              Churn analysis to identify customer risk patterns and improve retention decisions.
+            </span>
+            <span class="read-more">Read More</span>
+          </summary>
+        </details>
+
+        <div class="dataset-panel project-overview">
+          <h2>Dataset Overview</h2>
+          <ul>
+            <li>Around 10k+ customer records</li>
+            <li>Credit Score, Balance, Tenure</li>
+            <li>Customer churn and retention behavior</li>
+          </ul>
+        </div>
+
+        <div class="project-content">
+          <article class="bank-feature-card">
+            <div class="bank-feature-copy">
+              <h3>Bank Attrition Analysis</h3>
+              <p class="project-date">Mar 2026</p>
+              <p>
+                Bank Customer Attrition Analysis: uncovering the drivers of customer churn through exploratory data analysis and actionable insights using Python and additional libraries.
+              </p>
+
+              <div class="bank-tags">
+                <span>Python for Analytics</span>
+                <span>Matplotlib</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>SeaBorn</span>
+                <span>Exploratory Data Analysis</span>
+                <span>Plotly</span>
+              </div>
+            </div>
+            <div class="bank-feature-art" aria-hidden="true"></div>
+          </article>
+
+          <section class="bank-analysis-panel" aria-label="Bank attrition analysis details">
+            <input type="radio" name="bank-analysis-tab" id="bank-overview-tab" checked>
+            <input type="radio" name="bank-analysis-tab" id="bank-extended-tab">
+
+            <nav class="bank-analysis-tabs" aria-label="Bank analysis sections">
+              <label for="bank-overview-tab">Overview</label>
+              <label for="bank-extended-tab">Bank Attrition Analysis</label>
+            </nav>
+
+            <div class="bank-analysis-content">
+              <article class="bank-tab-content bank-overview-content">
+                <h3>Overview</h3>
+                <ul>
+                  <li><strong>Objective:</strong> Identify the key factors that influence customer attrition (&ldquo;Exited&rdquo;) in the bank and suggest strategies to reduce churn.</li>
+                  <li><strong>Data Cleaning:</strong> Standardized column names, converted blanks to NaN, imputed or dropped missing values, and engineered categorical bins for continuous variables.</li>
+                  <li><strong>Data Analysis:</strong> Conducted univariate, bivariate, and multivariate analyses to explore relationships between demographics, product usage, satisfaction, and churn.</li>
+                  <li><strong>Data Visualization:</strong> Employed histograms, box plots, bar charts, and heatmaps (using Matplotlib, Seaborn, and Plotly) to reveal patterns and correlations.</li>
+                  <li><strong>Insights:</strong> Discovered that low tenure, low satisfaction, inactive membership, and certain age/salary groups are strongly associated with higher churn rates.</li>
+                  <li><strong>Deliverable:</strong> A comprehensive Jupyter Notebook with annotated code, clean datasets, interactive visualizations, and a slide deck summarizing key findings and recommendations.</li>
+                </ul>
+              </article>
+
+              <article class="bank-tab-content bank-extended-content">
+                <h3>Extended Overview</h3>
+
+                <h4>Data Collection &amp; Cleaning</h4>
+                <p><strong>Source &amp; Scope:</strong> Loaded the Bank Customer Attrition dataset (&asymp; 10 k records, 20+ features) containing demographics, financials, product holding, and engagement indicators.</p>
+                <p><strong>Preprocessing Steps:</strong></p>
+                <ul>
+                  <li><strong>Column normalization:</strong> Renamed to lowercase and replaced spaces/&rsquo;-&rsquo; with underscores.</li>
+                  <li><strong>Null handling:</strong> Converted blank strings in gender, card_type, salary to NaN; imputed or dropped rows with critical missing entries in card_type, salary.</li>
+                  <li><strong>Feature engineering:</strong> Created categorical bins for tenure, age, credit score, balance, satisfaction score, salary, and number of complaints to facilitate grouped analyses.</li>
+                </ul>
+
+                <h4>Data Analysis</h4>
+                <ul>
+                  <li><strong>Univariate Analysis:</strong> Assessed distributions of all features; e.g., the majority of customers have a tenure of &le; 5 years and credit scores between 600-800.</li>
+                  <li><strong>Bivariate Analysis:</strong> Explored churn rate vs. single variables--found that customers with tenure &lt; 3 years and satisfaction score &le; 3 have churn rates &gt; 40%.</li>
+                  <li><strong>Multivariate Analysis:</strong> Investigated interactions (e.g., age &amp; salary; credit score &amp; number of products) revealing compounded risk factors, such as older customers with low balances and no active membership being most at-risk.</li>
+                </ul>
+
+                <h4>Data Visualization</h4>
+                <p><strong>Techniques Used:</strong></p>
+                <ul>
+                  <li>Histograms &amp; KDE plots to show distributions (age, salary).</li>
+                  <li>Boxplots comparing balance and credit score by churn status.</li>
+                  <li>Bar charts for categorical churn rates (gender, card type, product count).</li>
+                  <li>Heatmaps of correlation matrix to highlight feature interdependencies.</li>
+                  <li>Interactive dashboards (Plotly Express) for stakeholder exploration.</li>
+                </ul>
+
+                <h4>Trend Analysis</h4>
+                <ul>
+                  <li><strong>Customer Lifecycle Patterns:</strong> Identified a steep drop-off in retention after 2-3 years of tenure.</li>
+                  <li><strong>Product Engagement:</strong> Higher attrition among customers holding only one product; upsell opportunities (e.g., introducing additional products) could bolster retention.</li>
+                  <li><strong>Satisfaction &amp; Complaints:</strong> Satisfaction scores &le; 3 and any customer complaints increased churn likelihood by over 50%.</li>
+                </ul>
+
+                <h4>Summary</h4>
+                <p>Through systematic EDA, the analysis pinpoints actionable levers--enhancing early tenure engagement, improving service satisfaction, targeting product cross-sells, and reactivating inactive members--that can reduce attrition.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="project-section ride-project" id="uber-ride-analytics">
+        <details class="project-details">
+          <summary>
+            <span class="project-kicker">Project 03</span>
+            <span class="project-title">Uber Ride Analytics</span>
+            <span class="project-summary">
+              Ride-demand analysis for peak hours, demand behavior, and operational hotspots.
+            </span>
+            <span class="read-more">Read More</span>
+          </summary>
+        </details>
+
+        <div class="dataset-panel project-overview">
+          <h2>Dataset Overview</h2>
+          <ul>
+            <li>Around 6,945 ride records</li>
+            <li>Time and demand patterns</li>
+            <li>Peak hours and hotspot analysis</li>
+          </ul>
+        </div>
+
+        <div class="project-content">
+          <article class="ride-feature-card">
+            <div class="ride-feature-copy">
+              <h3>Uber Ride Analytics</h3>
+              <p class="project-date">Mar 2026</p>
+              <p>
+                Analyzed Uber ride records to uncover demand peaks, service gaps, cancellation patterns, ride-type performance, and weather-driven supply challenges.
+              </p>
+
+              <div class="ride-tags">
+                <span>Python for Analytics</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>SeaBorn</span>
+                <span>Ride Demand Analysis</span>
+                <span>EDA</span>
+              </div>
+            </div>
+            <div class="ride-feature-art" aria-hidden="true"></div>
+          </article>
+
+          <section class="ride-analysis-panel" aria-label="Uber ride analysis details">
+            <input type="radio" name="ride-analysis-tab" id="ride-overview-tab" checked>
+            <input type="radio" name="ride-analysis-tab" id="ride-extended-tab">
+
+            <nav class="ride-analysis-tabs" aria-label="Uber analysis sections">
+              <label for="ride-overview-tab">Overview</label>
+              <label for="ride-extended-tab">Extended Overview</label>
+            </nav>
+
+            <div class="ride-analysis-content">
+              <article class="ride-tab-content ride-overview-content">
+                <h3>Overview</h3>
+                <ul>
+                  <li><strong>Objective:</strong> Analyze Uber ride demand, cancellations, ride-type performance, and supply gaps to improve operational planning.</li>
+                  <li><strong>Data Cleaning:</strong> Converted timestamps, handled missing trip start/drop times, standardized locations, and engineered time, wait, duration, and peak-hour features.</li>
+                  <li><strong>Data Analysis:</strong> Studied hourly and weekly demand, cancellation patterns, no-car availability, revenue mix, ride type contribution, and weather impact.</li>
+                  <li><strong>Data Visualization:</strong> Used heatmaps, line charts, bar charts, box plots, and scatter plots to reveal service bottlenecks and demand trends.</li>
+                  <li><strong>Insights:</strong> Found peak-hour supply shortfalls, weather-related cancellation spikes, high-value UberXL rides, and underserved pickup zones.</li>
+                  <li><strong>Deliverable:</strong> A fully annotated Jupyter Notebook with summarized actionable findings and recommendations.</li>
+                </ul>
+              </article>
+
+              <article class="ride-tab-content ride-extended-content">
+                <h3>Extended Overview</h3>
+
+                <h4>Data Collection &amp; Cleaning</h4>
+                <p><strong>Source &amp; Scope:</strong> Ingested ~6,945 Uber ride records with 13 fields, including request/start/drop timestamps, pickup/drop locations, trip cost, tip, ride type, payment method, driver ID, status, and weather conditions.</p>
+                <p><strong>Preprocessing Steps:</strong></p>
+                <ul>
+                  <li><strong>Timestamp conversion:</strong> Transformed request, start, and drop time strings to datetime objects; derived request_hour, request_dayofweek, wait_time (start-request), and trip_duration (drop-start).</li>
+                  <li><strong>Missing data handling:</strong> Identified that all &ldquo;Trip Cancelled&rdquo; and &ldquo;No Cars Available&rdquo; trips lack start/drop times. Retained these for cancellation-rate analysis but excluded them from trip-duration and revenue metrics.</li>
+                  <li><strong>Feature engineering:</strong> Standardized pickup/drop names; encoded ride_type, payment_method, and weather; categorized hours into &ldquo;peak&rdquo; vs. &ldquo;off-peak.&rdquo;</li>
+                </ul>
+
+                <h4>Data Analysis</h4>
+                <ul>
+                  <li><strong>Temporal Demand &amp; Supply:</strong>
+                    <ul>
+                      <li><strong>Request volume by hour:</strong> Two daily peaks at 8-10 AM and 6-8 PM; supply shortfall (fulfilled vs. requested) highest at 6-7 PM.</li>
+                      <li><strong>Day-of-week patterns:</strong> Weekend mornings show elevated leisure travel demand; weekday evening commutes dominate.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Cancellation &amp; &ldquo;No Cars Available&rdquo; Patterns:</strong> Cancellation rate spikes (~25%) during peak hours; &ldquo;No Cars Available&rdquo; events concentrated in high-density zones (e.g., Majestic, Koramangala).</li>
+                  <li><strong>Revenue &amp; Ride-Type Mix:</strong>
+                    <ul>
+                      <li>UberGo comprises ~33% of trips but only ~28% of revenue; UberXL (~32% of trips) yields ~40% of total fare.</li>
+                      <li>Average tip correlates positively with trip duration (r&asymp;0.45).</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4>Data Visualization</h4>
+                <ul>
+                  <li><strong>Heatmap:</strong> Requests vs. hour and pickup zone to pinpoint underserved areas during rush hours.</li>
+                  <li><strong>Line Chart:</strong> Hourly request fulfillment rate overlaid on request volume.</li>
+                  <li><strong>Bar Charts:</strong> Cancellation and &ldquo;No Cars Available&rdquo; percentages by ride type and payment method.</li>
+                  <li><strong>Box Plots:</strong> Distribution of wait times and trip durations for each ride type.</li>
+                  <li><strong>Scatter Plot:</strong> Trip cost vs. duration colored by weather.</li>
+                </ul>
+
+                <h4>Trend Analysis</h4>
+                <ul>
+                  <li><strong>Weather Impact:</strong> &ldquo;Rainy&rdquo; and &ldquo;Stormy&rdquo; conditions see a ~20% increase in &ldquo;No Cars Available&rdquo; and ~15% higher cancellations.</li>
+                  <li><strong>Service Gaps Over Time:</strong> Month-over-month growth in late-night demand not matched by driver availability, suggesting incentive adjustments needed.</li>
+                </ul>
+
+                <h4>Summary</h4>
+                <p>This analysis uncovers critical service bottlenecks during peak and adverse-weather conditions, reveals high-value ride types, and quantifies cancellation drivers. Recommendations include dynamic driver-incentive schemes for rush hours and poor weather, targeted marketing for underutilized ride tiers, and real-time supply reallocation to high-demand zones.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="project-section amazon-project" id="amazon-product-feedback">
+        <details class="project-details">
+          <summary>
+            <span class="project-kicker">Project 04</span>
+            <span class="project-title">Amazon Product Feedback Analysis</span>
+            <span class="project-summary">
+              Product review analytics to understand customer sentiment, recommendation behavior, and product improvement opportunities.
+            </span>
+            <span class="read-more">Read More</span>
+          </summary>
+        </details>
+
+        <div class="dataset-panel project-overview">
+          <h2>Dataset Overview</h2>
+          <ul>
+            <li>Around 3,077 Amazon product reviews</li>
+            <li>13 fields including review text, rating, recommendation flag, helpful votes, brand, and categories</li>
+            <li>Sentiment, helpfulness, rating, and recommendation analysis</li>
+          </ul>
+        </div>
+
+        <div class="project-content">
+          <article class="amazon-feature-card">
+            <div class="amazon-feature-copy">
+              <h3>Amazon Product Feedback Analysis</h3>
+              <p class="project-date">Mar 2026</p>
+              <p>
+                Leveraging textual and quantitative insights to enhance product quality, customer satisfaction, and feedback-driven decision-making.
+              </p>
+
+              <div class="amazon-tags">
+                <span>Business Insights</span>
+                <span>Python for Analytics</span>
+                <span>Business Intelligence</span>
+                <span>Matplotlib</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Sentiment Analysis</span>
+              </div>
+            </div>
+            <div class="amazon-feature-art" aria-hidden="true"></div>
+          </article>
+
+          <section class="amazon-analysis-panel" aria-label="Amazon product feedback analysis details">
+            <input type="radio" name="amazon-analysis-tab" id="amazon-overview-tab" checked>
+            <input type="radio" name="amazon-analysis-tab" id="amazon-extended-tab">
+
+            <nav class="amazon-analysis-tabs" aria-label="Amazon analysis sections">
+              <label for="amazon-overview-tab">Overview</label>
+              <label for="amazon-extended-tab">Amazon Product Feedback Analysis</label>
+            </nav>
+
+            <div class="amazon-analysis-content">
+              <article class="amazon-tab-content amazon-overview-content">
+                <h3>Overview</h3>
+                <ul>
+                  <li><strong>Objective:</strong> Uncover the drivers of customer sentiment and engagement in Amazon product reviews to inform product development and marketing strategies.</li>
+                  <li><strong>Data Cleaning:</strong> Standardized column names, parsed review dates, handled missing values in text and recommendation flags, and engineered features such as review length and sentiment polarity.</li>
+                  <li><strong>Data Analysis:</strong> Explored distributions of ratings and recommendation flags, identified top brands and categories by sentiment, examined the relationship between review length, helpfulness votes, and ratings.</li>
+                  <li><strong>Data Visualization:</strong> Employed bar charts for rating counts, word clouds for positive vs. negative reviews, scatter plots of helpful votes vs. review length, and heatmaps of sentiment across brands.</li>
+                  <li><strong>Insights:</strong> High ratings (4-5 stars) dominate but negative reviews contain recurring product-specific complaints; longer reviews tend to garner more helpful votes; certain brands/categories show consistently higher sentiment.</li>
+                  <li><strong>Deliverable:</strong> A thoroughly documented Jupyter Notebook with all code and outputs, plus a concise slide deck summarizing actionable findings and recommendations.</li>
+                </ul>
+              </article>
+
+              <article class="amazon-tab-content amazon-extended-content">
+                <h3>Extended Overview</h3>
+
+                <h4>Data Collection &amp; Cleaning</h4>
+                <p><strong>Source &amp; Scope:</strong> Loaded ~3,077 Amazon product reviews covering 13 fields--including review text, rating (1-5), recommendation flag, helpfulness votes, brand, and categories.</p>
+                <p><strong>Preprocessing Steps:</strong></p>
+                <ul>
+                  <li><strong>Column normalization:</strong> Renamed fields to snake_case (e.g. reviews_date_added).</li>
+                  <li><strong>Date parsing:</strong> Converted reviews_date_added to datetime; noted only ~276 entries had dates, so time-based trend analysis was limited.</li>
+                  <li><strong>Missing data:</strong> Imputed missing reviews_do_recommend as &ldquo;Unknown&rdquo;; dropped any rows without review text.</li>
+                  <li><strong>Feature engineering:</strong>
+                    <ul>
+                      <li><strong>Review length:</strong> Counted words in reviews_text.</li>
+                      <li><strong>Sentiment polarity:</strong> Computed using a lexicon-based approach to score each review from -1 (negative) to +1 (positive).</li>
+                      <li><strong>Helpfulness ratio:</strong> reviews_num_helpful divided by review length to normalize engagement.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4>Data Analysis</h4>
+                <ul>
+                  <li><strong>Rating &amp; Recommendation Distribution:</strong>
+                    <ul>
+                      <li><strong>Ratings:</strong> Approximately 70% of reviews are 4-5 stars; 1-2 star reviews represent ~15%.</li>
+                      <li><strong>Recommendation Flag:</strong> &ldquo;doRecommend = True&rdquo; aligns strongly with 4-5 star ratings; ~10% of high-rated reviews did not explicitly recommend.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Brand &amp; Category Sentiment:</strong>
+                    <ul>
+                      <li>Brands A and B show average sentiment scores above 0.6, while Brand C averages 0.2 with frequent 1-2 star reviews.</li>
+                      <li>Certain categories (e.g., Electronics) have wider sentiment variability versus more uniform categories like Books.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Textual Insights:</strong>
+                    <ul>
+                      <li><strong>Word Cloud Analysis:</strong> Positive reviews frequently mention &ldquo;quality,&rdquo; &ldquo;easy,&rdquo; and &ldquo;recommend,&rdquo; while negative reviews highlight &ldquo;defective,&rdquo; &ldquo;return,&rdquo; and &ldquo;battery.&rdquo;</li>
+                      <li><strong>Length vs. Helpfulness:</strong> Longer reviews (200+ words) receive on average 2x more helpful votes than short reviews (&lt;50 words).</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4>Data Visualization</h4>
+                <ul>
+                  <li><strong>Bar Charts:</strong> Rating counts and recommendation rates by category.</li>
+                  <li><strong>Heatmap:</strong> Average sentiment polarity across top 10 brands and categories.</li>
+                  <li><strong>Word Clouds:</strong> Side-by-side for 5-star vs. 1-star reviews to contrast key terms.</li>
+                  <li><strong>Scatter Plot:</strong> Review length vs. number of helpful votes with a LOESS smoothing line.</li>
+                  <li><strong>Box Plots:</strong> Distribution of helpfulness ratio across rating levels.</li>
+                </ul>
+
+                <h4>Trend Analysis</h4>
+                <ul>
+                  <li><strong>Sentiment Extremes:</strong> While most reviews are positive, negative reviews are more textually rich--offering deeper insights into pain points (e.g., durability, customer service).</li>
+                  <li><strong>Engagement Patterns:</strong> Reviews that include product comparisons or detailed pros/cons lists see the highest helpfulness ratios, indicating value in structured feedback.</li>
+                </ul>
+
+                <h4>Summary</h4>
+                <p>This analysis distills the volumetric and semantic dimensions of Amazon product feedback. Key recommendations include prioritizing improvements on common defect areas, encouraging longer &ldquo;pros and cons&rdquo; style reviews to boost helpfulness and trust, and tailoring product messaging around features that drive the highest sentiment in your strongest-performing brands and categories.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
